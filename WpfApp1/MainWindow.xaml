@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Simple Calc" MinHeight="335" MinWidth="260" Background="DimGray" Opacity="0.8" SizeToContent="WidthAndHeight" d:DesignWidth="255">
     <Grid>
-        
+        <Button x:Name="button1" Content="1" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" Click="Button_Click" BorderThickness="1" Background="#FFF1F1F1" Foreground="#FF444242" Opacity="0.8" BorderBrush="DimGray"
+                />
+        <Button x:Name="button2" Content="2" HorizontalAlignment="Left" Margin="55,105,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" Click="Button_Click" BorderThickness="1" Background="#FFF1F1F1" Foreground="#FF444242" Opacity="0.8" BorderBrush="DimGray"
+                />
+        <Button x:Name="button3" Content="3" HorizontalAlignment="Left" Margin="100,105,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" Click="Button_Click" BorderThickness="1" Background="#FFF1F1F1" Foreground="#FF444242" Opacity="0.8" BorderBrush="DimGray"
+                />
+        <Button x:Name="button4" Content="4" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" Click="Button_Click" BorderThickness="1" Background="#FFF1F1F1" Foreground="#FF444242" Opacity="0.8" BorderBrush="DimGray"
+                />
+        <Button x:Name="button6" Content="6" HorizontalAlignment="Left" Margin="100,150,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" Click="Button_Click" BorderThickness="1" Background="#FFF1F1F1" Foreground="#FF444242" Opacity="0.8" BorderBrush="DimGray"
+                />
+        <Button x:Name="button5" Content="5" HorizontalAlignment="Left" Margin="55,150,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" Click="Button_Click" BorderThickness="1" Background="#FFF1F1F1" Foreground="#FF444242" Opacity="0.8" BorderBrush="DimGray"
+                />
+        <Button x:Name="button7" Content="7" HorizontalAlignment="Left" Margin="10,195,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" Click="Button_Click" BorderThickness="1" Background="#FFF1F1F1" Foreground="#FF444242" Opacity="0.8" BorderBrush="DimGray"
+                />
+        <Button x:Name="button8" Content="8" HorizontalAlignment="Left" Margin="55,195,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" Click="Button_Click" BorderThickness="1" Background="#FFF1F1F1" Foreground="#FF444242" Opacity="0.8" BorderBrush="DimGray"
+                />
+        <Button x:Name="button9" Content="9" HorizontalAlignment="Left" Margin="100,195,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" Click="Button_Click" BorderThickness="1" Background="#FFF1F1F1" Foreground="#FF444242" Opacity="0.8" BorderBrush="DimGray"
+                />
+        <Button x:Name="button0" Content="0" HorizontalAlignment="Left" Margin="55,240,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" Click="Button_Click" BorderThickness="1" Background="#FFF1F1F1" Foreground="#FF444242" Opacity="0.8" BorderBrush="DimGray"
+                />
+        <Button x:Name="buttonDot" Content="." HorizontalAlignment="Left" Margin="100,240,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" Click="Button_Click" BorderThickness="1" Background="#FFF1F1F1" Foreground="#FF444242" Opacity="0.8" BorderBrush="DimGray"
+                />
+        <Button x:Name="buttonDivide" Content="/" HorizontalAlignment="Left" Margin="145,105,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" BorderThickness="1" Background="#FFACACAC" Click="Operator_Click" BorderBrush="DimGray" Foreground="#FF444242"
+                />
+        <Button x:Name="buttonMultiply" Content="*" HorizontalAlignment="Left" Margin="145,150,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" BorderThickness="1" Background="#FFACACAC" Click="Operator_Click" BorderBrush="DimGray" Foreground="#FF444242"
+                />
+        <Button x:Name="buttonMinus" Content="-" HorizontalAlignment="Left" Margin="145,195,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" BorderThickness="1" Background="#FFACACAC" Click="Operator_Click" BorderBrush="DimGray" Foreground="#FF444242"
+                />
+        <Button x:Name="buttonPercent" Content="%" HorizontalAlignment="Left" Margin="190,195,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" BorderThickness="1" Background="#FFACACAC" Click="Operator_Click" BorderBrush="DimGray" Foreground="#FF444242"
+                />
+        <Button x:Name="buttonPlus" Content="+" HorizontalAlignment="Left" Margin="145,240,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" BorderThickness="1" Background="#FFACACAC" Click="Operator_Click" BorderBrush="DimGray" Foreground="#FF444242"
+                />
+        <Button x:Name="buttonEquals" Content="=" HorizontalAlignment="Left" Margin="190,240,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" BorderThickness="1" Background="#FF009DFF" Click="ButtonEquals_Click" BorderBrush="DimGray" Foreground="#FF444242"
+                />
+        <Button x:Name="buttonCE" Content="CE" HorizontalAlignment="Left" Margin="190,105,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="26" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" BorderThickness="1" Click="ButtonCE_Click" Background="#FF00CF09" BorderBrush="DimGray" Foreground="#FF444242" 
+                />
+        <Button x:Name="buttonC" Content="C" HorizontalAlignment="Left" Margin="190,150,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="30" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" BorderThickness="1" Background="#FFE4460C" Click="ButtonC_Click" BorderBrush="DimGray" Foreground="#FF444242"
+                />
+        <Button x:Name="button_negate" Content="+/-" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Height="45" Width="45" FontSize="25" FontFamily="Source Sans Pro Black" RenderTransformOrigin="2.489,0.667" Click="Button_Click" BorderThickness="1" Background="#FFF1F1F1" Foreground="#FF444242" Opacity="0.8" BorderBrush="DimGray"
+                />
+
+        <TextBox x:Name="resultDisplay" HorizontalAlignment="Left" Height="42" FontSize="36" FontFamily="Source Sans Pro Black" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="225" Margin="10,58,0,0" TextAlignment="Right" TextChanged="TextBox_TextChanged" Background="DimGray" BorderThickness="0" Foreground="White" />
+        <TextBox x:Name="historyDisplay" HorizontalAlignment="Left" Height="17" FontSize="12" FontFamily="Source Sans Pro Black" TextWrapping="Wrap" Text="Not history yet" VerticalAlignment="Top" Width="225" Margin="10,41,0,0" TextAlignment="Right" TextChanged="TextBox_TextChanged" Background="DimGray" BorderThickness="0" Foreground="White" />
+
     </Grid>
 </Window>
